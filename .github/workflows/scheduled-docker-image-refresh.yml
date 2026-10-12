@@ -18,11 +18,6 @@ name: Scheduled Docker image refresh
 # actually pin against (image content, code, deps) does not.
 
 on:
-  schedule:
-    # Mondays at 06:00 UTC — gives the weekend for upstream patches to
-    # settle and surfaces failures at the start of the work week so a
-    # human can react.
-    - cron: "0 6 * * 1"
 
   # Manual trigger so operators can force a refresh on demand (e.g.
   # immediately after a high-severity base-image CVE drops).

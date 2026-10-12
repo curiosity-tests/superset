@@ -15,8 +15,6 @@ name: Label Merge Conflicts
 # A schedule bounds that to a fixed, predictable cadence instead; adjust it
 # if 2 hours turns out to be too slow or too chatty in practice.
 on:
-  schedule:
-    - cron: "0 */2 * * *"
   workflow_dispatch:
 
 # Avoid two full backlog sweeps racing (a manual workflow_dispatch landing

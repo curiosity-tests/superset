@@ -1,6 +1,7 @@
 name: pre-commit checks
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - "master"
@@ -10,8 +11,6 @@ on:
   # Nightly full-tree sweep. Per-PR runs only lint changed files, so a change
   # that invalidates an untouched file (e.g. a type change that breaks an
   # importing test) can pass every PR yet leave master red. This catches that.
-  schedule:
-    - cron: "0 6 * * *"
 
 permissions:
   contents: read

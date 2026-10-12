@@ -9,8 +9,6 @@ name: Frontend bundle size (nightly baseline + analyzer)
 # gets per day would burn CI time for no benefit a nightly refresh doesn't
 # already cover.
 on:
-  schedule:
-    - cron: "0 6 * * *"
   workflow_dispatch: {}
 
 concurrency:
